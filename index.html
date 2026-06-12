@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<!-- saved from url=(0238)file:///Users/mac/Downloads/%E5%A5%A5%E6%A3%AE%E8%A7%82%E9%B8%9F%E6%94%BB%E7%95%A5/%E5%A5%A5%E6%9E%97%E5%8C%B9%E5%85%8B%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD%C2%B7%E5%AE%B6%E5%BA%AD%E8%A7%82%E9%B8%9F%E5%AE%8C%E5%85%A8%E6%94%BB%E7%95%A5.html -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>奥林匹克森林公园·家庭观鸟完全攻略</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Noto Sans SC', -apple-system, sans-serif;
+    background: #f5f0e8;
+    color: #2c2c2c;
+    line-height: 1.8;
+  }
+  .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+  
+  /* 封面 */
+  .cover {
+    background: linear-gradient(135deg, #1a3a2a 0%, #2d5a3e 50%, #1a3a2a 100%);
+    color: #f5f0e8;
+    padding: 60px 40px;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: '🦜🌿🦆🐦';
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 24px;
+    opacity: 0.3;
+  }
+  .cover::after {
+    content: '🌳🌾🏞️🌅';
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 24px;
+    opacity: 0.3;
+  }
+  .cover h1 { font-size: 2.2em; font-weight: 900; margin-bottom: 10px; font-family: 'Noto Serif SC', serif; }
+  .cover .subtitle { font-size: 1.1em; opacity: 0.85; margin-bottom: 5px; }
+  .cover .date { font-size: 0.9em; opacity: 0.7; }
+  .cover .badge { display: inline-block; background: #e8c84a; color: #1a3a2a; padding: 4px 16px; border-radius: 20px; font-weight: 700; font-size: 0.85em; margin-top: 15px; }
+  
+  /* 信息卡片 */
+  .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 30px; }
+  .info-card {
+    background: white; border-radius: 12px; padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .info-card h3 { font-size: 1em; color: #2d5a3e; margin-bottom: 8px; }
+  .info-card p { font-size: 0.9em; color: #555; }
+  
+  /* 路线 */
+  .route-box {
+    background: white; border-radius: 12px; padding: 24px;
+    margin-bottom: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .route-box h2 { color: #2d5a3e; font-size: 1.3em; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid #e8c84a; }
+  .route-step { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+  .route-step .time { background: #2d5a3e; color: white; border-radius: 20px; padding: 2px 12px; font-size: 0.8em; white-space: nowrap; font-weight: 500; }
+  .route-step .desc { font-size: 0.92em; }
+  
+  /* 规则 */
+  .rules { background: #fff8e1; border-radius: 12px; padding: 20px 24px; margin-bottom: 30px; border-left: 4px solid #e8c84a; }
+  .rules h2 { font-size: 1.1em; color: #8a6d00; margin-bottom: 10px; }
+  .rules ol { padding-left: 20px; font-size: 0.9em; color: #555; }
+  .rules ol li { margin-bottom: 4px; }
+  
+  /* 鸟种卡片 */
+  .section-title {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.5em; color: #1a3a2a; margin: 30px 0 15px;
+    padding-bottom: 8px; border-bottom: 3px solid #2d5a3e;
+  }
+  .bird-card {
+    background: white; border-radius: 12px; overflow: hidden;
+    margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    display: flex; flex-direction: column;
+  }
+  .bird-card .img-wrap {
+    width: 100%; max-height: 400px; overflow: hidden;
+    background: #e8e0d0; display: flex; align-items: center; justify-content: center;
+  }
+  .bird-card .img-wrap img {
+    width: 100%; height: auto; display: block;
+    object-fit: contain; max-height: 400px;
+  }
+  .bird-card .img-wrap .no-img {
+    padding: 60px; color: #999; font-size: 0.9em; text-align: center;
+  }
+  .bird-card .info {
+    padding: 18px 22px 20px;
+  }
+  .bird-card .info .bird-header {
+    display: flex; align-items: center; gap: 10px; margin-bottom: 8px;
+  }
+  .bird-card .info .bird-header h3 {
+    font-size: 1.2em; font-weight: 700;
+  }
+  .bird-card .info .bird-header .num {
+    background: #2d5a3e; color: white; border-radius: 50%;
+    width: 28px; height: 28px; display: flex; align-items: center; justify-content: center;
+    font-size: 0.8em; font-weight: 700;
+  }
+  .bird-card .info .bird-header .freq {
+    margin-left: auto; font-size: 0.85em; color: #888;
+  }
+  .bird-card .info .sci { font-size: 0.85em; color: #888; margin-bottom: 8px; }
+  .bird-card .info .look { background: #f0f7f0; padding: 8px 12px; border-radius: 8px; font-size: 0.9em; margin-bottom: 8px; }
+  .bird-card .info .look::before { content: '👀 识别：'; font-weight: 600; color: #2d5a3e; }
+  .bird-card .info .habit { font-size: 0.9em; color: #555; margin-bottom: 6px; }
+  .bird-card .info .habit::before { content: '📖 习性：'; font-weight: 600; color: #555; }
+  .bird-card .info .spot { font-size: 0.85em; color: #888; }
+  .bird-card .info .spot::before { content: '📍 最佳观测点：'; font-weight: 500; }
+  .bird-card .info .note-link { font-size: 0.8em; color: #4a90d9; margin-top: 6px; display: inline-block; }
+  
+  .challenge { background: white; border-radius: 12px; padding: 20px 24px; margin: 30px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .challenge h2 { color: #2d5a3e; font-size: 1.2em; margin-bottom: 10px; }
+  .challenge .checklist { column-count: 2; font-size: 0.88em; }
+  .challenge .checklist .item { margin-bottom: 4px; }
+  
+  .footer { text-align: center; padding: 30px; color: #888; font-size: 0.85em; }
+  
+  @media (max-width: 600px) {
+    .info-grid { grid-template-columns: 1fr; }
+    .challenge .checklist { column-count: 1; }
+    .cover h1 { font-size: 1.6em; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="cover">
+  <h1>🦜 奥林匹克森林公园</h1>
+  <h1>家庭观鸟完全攻略</h1>
+  <div class="subtitle">北京奥林匹克森林公园 · 北森 · 首次家庭观鸟</div>
+  <div class="date">📅 2026年6月13日（周六）| ☀️ 夏季专版</div>
+  <div class="badge">📋 共收录 31 种鸟类 · 配图完整版</div>
+</div>
+
+<div class="info-grid">
+  <div class="info-card">
+    <h3>🚇 交通</h3>
+    <p>地铁8号线「森林公园南门站」A/B口出<br>自驾导航「奥森南园南门停车场」(建议8点前到)</p>
+  </div>
+  <div class="info-card">
+    <h3>⏰ 最佳时间</h3>
+    <p>清晨 6:00-9:00（强烈推荐）<br>傍晚 16:00-18:00</p>
+  </div>
+  <div class="info-card">
+    <h3>🎒 装备建议</h3>
+    <p>双筒望远镜(8×42)、暗色衣服、遮阳帽<br>水壶、防蚊液、给孩子准备任务卡</p>
+  </div>
+  <div class="info-card">
+    <h3>🎫 门票</h3>
+    <p>免费！无需预约<br>旺季 6:00-22:00 开放</p>
+  </div>
+</div>
+
+<div class="route-box">
+  <h2>🗺️ 推荐路线（6:00-12:00）</h2>
+  <div class="route-step"><span class="time">6:00-8:00</span><span class="desc">南园南门 → 奥海观水鸟（绿头鸭、小䴙䴘、白骨顶）→ 沉水廊道</span></div>
+  <div class="route-step"><span class="time">8:00-9:00</span><span class="desc">湿地芦苇区（震旦鸦雀 ⭐、棕头鸦雀、东方大苇莺、文须雀）</span></div>
+  <div class="route-step"><span class="time">9:00-9:30</span><span class="desc">生态廊桥 → 过五环到北园</span></div>
+  <div class="route-step"><span class="time">9:30-10:30</span><span class="desc">北园大树园林鸟（红嘴蓝鹊、啄木鸟、乌鸫、黑尾蜡嘴雀）</span></div>
+  <div class="route-step"><span class="time">10:30-11:00</span><span class="desc">北园湿地"大坑"（再找芦苇鸟）</span></div>
+  <div class="route-step"><span class="time">11:00-11:30</span><span class="desc">北园雨燕塔看雨燕盘旋</span></div>
+  <div class="route-step"><span class="time">11:30-</span><span class="desc">树荫野餐 🍱 下午自由活动</span></div>
+</div>
+
+<div class="rules">
+  <h2>📜 文明观鸟守则（全家一起遵守）</h2>
+  <ol>
+    <li>📏 和鸟类保持 <strong>5米以上</strong> 距离</li>
+    <li>🚫 拍照<strong>不用闪光灯</strong>（尤其繁殖期会惊吓弃巢）</li>
+    <li>🤫 保持安静，不要突然大喊大叫</li>
+    <li>🍞 <strong>不投喂</strong>——人类食物对鸟类有害</li>
+    <li>🌿 不踩踏芦苇——很多鸟在根部筑巢</li>
+    <li>📸 先观察再拍照——让孩子先用眼睛看</li>
+  </ol>
+</div>
+
+<h2 class="section-title">🌊 水域鸟种（12种）</h2>
+
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/01_绿头鸭.jpg" alt="绿头鸭"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">01</span>
+      <h3>🦆 绿头鸭</h3>
+      <span class="freq">⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="sci">雁形目 鸭科</div>
+    <div class="look">♂头绿色金属光泽，白颈环，栗胸，黄绿嘴。♀全身褐色斑驳。</div>
+    <div class="habit">北京最常见水鸟，不惧人。杂食性，水面倒立探底取食。6月可见母鸭带小鸭。</div>
+    <div class="spot">奥海南岸、北岸浅滩</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/02_小䴙䴘.jpg" alt="小䴙䴘"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">02</span>
+      <h3>🦆 小䴙䴘</h3>
+      <span class="freq">⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="sci">䴙䴘目 䴙䴘科</div>
+    <div class="look">小巧（27cm），繁殖期喉部栗红色，尾羽极短，像水葫芦。</div>
+    <div class="habit">潜水能手，一个猛子能潜十几米。清脆颤音，水中精灵。</div>
+    <div class="spot">奥海、湿地水面</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/03_白骨顶.jpg" alt="白骨顶"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">03</span>
+      <h3>🦆 白骨顶</h3>
+      <span class="freq">⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="sci">鹤形目 秧鸡科</div>
+    <div class="look">全身黑羽，额头白色骨板，白嘴——黑衣白帽。</div>
+    <div class="habit">走路摇摇摆摆像企鹅，入水变潜水艇（潜10秒10米）。领地意识强。</div>
+    <div class="spot">奥海湖面</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/04_黑水鸡.jpg" alt="黑水鸡"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">04</span>
+      <h3>🦆 黑水鸡</h3>
+      <span class="freq">⭐⭐⭐⭐</span>
+    </div>
+    <div class="sci">鹤形目 秧鸡科</div>
+    <div class="look">黑褐色，红色额甲（和白骨顶区别），嘴端黄色，脚绿，尾下两片白斑。</div>
+    <div class="habit">水面浮叶上行走，尾羽不停上翘。6月能看到毛茸茸的雏鸟。</div>
+    <div class="spot">奥海芦苇边缘</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/05_苍鹭.jpg" alt="苍鹭"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">05</span>
+      <h3>🦢 苍鹭</h3>
+      <span class="freq">⭐⭐⭐⭐</span>
+    </div>
+    <div class="sci">鹈形目 鹭科</div>
+    <div class="look">大型涉禽（近1m），灰白色，黑眉纹延伸到后颈，飞行脖子S形。</div>
+    <div class="habit">老等——站浅水区一动不动等鱼，一蹲半小时。起飞姿态优雅。</div>
+    <div class="spot">奥海北岸浅滩</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/06_小白鹭.jpg" alt="小白鹭"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">06</span>
+      <h3>🦢 小白鹭</h3>
+      <span class="freq">⭐⭐⭐⭐</span>
+    </div>
+    <div class="sci">鹈形目 鹭科</div>
+    <div class="look">全身纯白，黑嘴黑腿，黄脚趾是标志。繁殖期后脑两根饰羽。</div>
+    <div class="habit">浅水快步追鱼，姿态轻盈。比苍鹭活跃很多。</div>
+    <div class="spot">奥海湿地浅水区</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/07_池鹭.jpg" alt="池鹭"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">07</span>
+      <h3>🦢 池鹭</h3>
+      <span class="freq">⭐⭐⭐</span>
+    </div>
+    <div class="sci">鹈形目 鹭科</div>
+    <div class="look">繁殖期头颈深栗色，背蓝灰，翅膀白——红头灰背白翅膀。</div>
+    <div class="habit">水边静立等鱼，受惊飞起时白色翅膀非常醒目。</div>
+    <div class="spot">湿地芦苇边</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/08_大麻鳽.jpg" alt="大麻鳽"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">08</span>
+      <h3>🦢 大麻鳽</h3>
+      <span class="freq">⭐⭐</span>
+    </div>
+    <div class="sci">鹈形目 鹭科</div>
+    <div class="look">黄褐色迷彩服，密布黑纵纹。警戒时嘴尖朝天，完美伪装成芦苇。</div>
+    <div class="habit">伪装大师！站芦苇中一动不动融为环境。晨昏活动为主。</div>
+    <div class="spot">北园芦苇区</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/09_斑头雁.jpg" alt="斑头雁"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">09</span>
+      <h3>🦆 斑头雁</h3>
+      <span class="freq">⭐⭐⭐</span>
+    </div>
+    <div class="sci">雁形目 鸭科</div>
+    <div class="look">头顶白，后脑两道黑横斑像斑马帽，脖子白，背灰褐。</div>
+    <div class="habit">高原飞行冠军——能飞越珠峰！奥森常和灰雁混群。</div>
+    <div class="spot">奥海湖面</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/10_灰雁.jpg" alt="灰雁"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">10</span>
+      <h3>🦆 灰雁</h3>
+      <span class="freq">⭐⭐⭐⭐</span>
+    </div>
+    <div class="sci">雁形目 鸭科</div>
+    <div class="look">灰褐色羽毛，粉红嘴+粉红脚，像穿芭蕾舞鞋。欧洲家鹅祖先。</div>
+    <div class="habit">悠闲划水，偶尔伸长脖子互啄斗嘴，萌度爆表。</div>
+    <div class="spot">奥海湖面</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/11_鸿雁.jpg" alt="鸿雁"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">11</span>
+      <h3>🦆 鸿雁</h3>
+      <span class="freq">⭐⭐⭐</span>
+    </div>
+    <div class="sci">雁形目 鸭科</div>
+    <div class="look">橙红嘴，黑白分明的颈部条纹。中国土生家鹅的祖宗。</div>
+    <div class="habit">爱扎堆晒太阳，叫声低沉如男低音合唱。飞行队列整齐如仪仗队。</div>
+    <div class="spot">奥海湖面</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/12_赤麻鸭.jpg" alt="赤麻鸭"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">12</span>
+      <h3>🦆 赤麻鸭</h3>
+      <span class="freq">⭐⭐⭐</span>
+    </div>
+    <div class="sci">雁形目 鸭科</div>
+    <div class="look">通体橙黄至栗色如熟柿子，翅有白斑和铜绿翼镜，嘴脚黑。</div>
+    <div class="habit">飞行时白色翅斑非常显眼。奥森高光鸟种。</div>
+    <div class="spot">奥海湖面</div>
+  </div>
+</div>
+<h2 class="section-title">🌳 林地与灌丛鸟种（11种）</h2>
+
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/13_戴胜.jpg" alt="戴胜"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">13</span>
+      <h3>🐦 戴胜</h3>
+      <span class="freq">⭐⭐⭐⭐</span>
+    </div>
+    <div class="sci">犀鸟目 戴胜科</div>
+    <div class="look">橘褐体羽，黑白相间大扇子羽冠，长弯细嘴。鸟界时尚icon！</div>
+    <div class="habit">地面一蹦一跳找虫，羽冠时展时收。自带发条超可爱。6月可能见喂雏。</div>
+    <div class="spot">南园草地林缘</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/14_星头啄木鸟.jpg" alt="星头啄木鸟"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">14</span>
+      <h3>🐦 星头啄木鸟</h3>
+      <span class="freq">⭐⭐⭐⭐</span>
+    </div>
+    <div class="sci">䴕形目 啄木鸟科</div>
+    <div class="look">迷你（15cm），灰褐色头带星星斑点，♂后脑有小红斑。</div>
+    <div class="habit">哒哒哒敲树找虫像给病树听诊。害羞怕人，会躲树干后面。</div>
+    <div class="spot">北园林地</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/15_灰头绿啄木鸟.jpg" alt="灰头绿啄木鸟"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">15</span>
+      <h3>🐦 灰头绿啄木鸟</h3>
+      <span class="freq">⭐⭐⭐</span>
+    </div>
+    <div class="sci">䴕形目 啄木鸟科</div>
+    <div class="look">绿背红顶，配色高级！♂头顶一抹红像时尚挑染。</div>
+    <div class="habit">啄木声洪亮如咚咚咚敲木鱼，舌头能伸10cm勾虫。</div>
+    <div class="spot">北园林地</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/16_大斑啄木鸟.jpg" alt="大斑啄木鸟"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">16</span>
+      <h3>🐦 大斑啄木鸟</h3>
+      <span class="freq">⭐⭐⭐</span>
+    </div>
+    <div class="sci">䴕形目 啄木鸟科</div>
+    <div class="look">上体黑白如斑马，肩大白斑，尾下覆羽红色，♂后枕有红斑。</div>
+    <div class="habit">典型森林医生，敲击节奏快速有力，螺旋式上树。</div>
+    <div class="spot">南北园林地</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/17_红嘴蓝鹊.jpg" alt="红嘴蓝鹊"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">17</span>
+      <h3>🐦 红嘴蓝鹊</h3>
+      <span class="freq">⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="sci">雀形目 鸦科</div>
+    <div class="look">蓝灰礼服，红嘴如涂口红，长尾如飘带。阳光下羽毛金属光泽——颜值担当。</div>
+    <div class="habit">鸦科社牛代表，成群叽喳开茶话会。会模仿其他鸟叫。</div>
+    <div class="spot">北园大树园</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/18_灰喜鹊.jpg" alt="灰喜鹊"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">18</span>
+      <h3>🐦 灰喜鹊</h3>
+      <span class="freq">⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="sci">雀形目 鸦科</div>
+    <div class="look">头黑亮蓝，身体灰蓝，长尾占身体一半，飞起来像蓝丝带。</div>
+    <div class="habit">比喜鹊更爱扎堆，十几只霸占树枝。吃毛虫是森林小卫士。</div>
+    <div class="spot">南北园到处有</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/19_乌鸫.jpg" alt="乌鸫"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">19</span>
+      <h3>🐦 乌鸫</h3>
+      <span class="freq">⭐⭐⭐⭐</span>
+    </div>
+    <div class="sci">雀形目 鸫科</div>
+    <div class="look">♂全身黑羽+橘黄嘴+黄眼圈，像黑西装绅士。♀黑褐色。</div>
+    <div class="habit">模仿大师！能模仿手机铃声、汽车警报。清晨树顶高歌，号称百舌。</div>
+    <div class="spot">清晨林地</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/20_黑尾蜡嘴雀.jpg" alt="黑尾蜡嘴雀"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">20</span>
+      <h3>🐦 黑尾蜡嘴雀</h3>
+      <span class="freq">⭐⭐⭐</span>
+    </div>
+    <div class="sci">雀形目 燕雀科</div>
+    <div class="look">黑短尾+黄色超大厚嘴！♂头黑，♀头灰。嗑瓜子冠军。</div>
+    <div class="habit">嗑瓜子速度堪比人类，还会把果壳堆成小山。</div>
+    <div class="spot">林缘灌丛果树区</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/21_珠颈斑鸠.jpg" alt="珠颈斑鸠"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">21</span>
+      <h3>🐦 珠颈斑鸠</h3>
+      <span class="freq">⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="sci">鸽形目 鸠鸽科</div>
+    <div class="look">颈部黑底白珠的珍珠围脖，上体淡褐色，像穿了貂皮大衣。</div>
+    <div class="habit">城市最常见斑鸠，地面散步不怕人。飞行时翅膀呼呼声。</div>
+    <div class="spot">草地、步道</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/22_白鹡鸰.jpg" alt="白鹡鸰"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">22</span>
+      <h3>🐦 白鹡鸰</h3>
+      <span class="freq">⭐⭐⭐⭐</span>
+    </div>
+    <div class="sci">雀形目 鹡鸰科</div>
+    <div class="look">黑白相间，长尾不停上下摆动——标志动作！地面快步小跑。</div>
+    <div class="habit">尾巴像上了发条不停上下点动，水边快步追虫吃。</div>
+    <div class="spot">湖边湿地、草地</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/23_鹪鹩.jpg" alt="鹪鹩"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">23</span>
+      <h3>🐦 鹪鹩</h3>
+      <span class="freq">⭐⭐</span>
+    </div>
+    <div class="sci">雀形目 鹪鹩科</div>
+    <div class="look">超迷你（9-10cm，比鸡蛋还轻！），褐色细密横斑，短尾常翘。</div>
+    <div class="habit">个头小能量大，树枝间跳来跳去像小火箭，鸣声异常响亮。</div>
+    <div class="spot">灌丛、林地底层</div>
+  </div>
+</div>
+<h2 class="section-title">🌾 芦苇湿地专有鸟种（4种）⭐ 奥森最大特色</h2>
+
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/24_震旦鸦雀 ⭐.jpg" alt="震旦鸦雀 ⭐"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">24</span>
+      <h3>🐦 震旦鸦雀 ⭐</h3>
+      <span class="freq">⭐⭐⭐（珍稀）</span>
+    </div>
+    <div class="sci">雀形目 鸦雀科</div>
+    <div class="look">体长18cm，黄厚嘴带钩，黑眉纹，上背黄褐有黑纵纹。鸟中大熊猫！国家二级！</div>
+    <div class="habit">中国特有珍稀鸟种！严重依赖芦苇，用厚嘴撕开芦苇找虫。奥森是市区最稳定能看到它的地方！</div>
+    <div class="spot">北园湿地芦苇区、南园沉水廊道</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/25_棕头鸦雀.jpg" alt="棕头鸦雀"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">25</span>
+      <h3>🐦 棕头鸦雀</h3>
+      <span class="freq">⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="sci">雀形目 鸦雀科</div>
+    <div class="look">头顶至背棕红，圆滚滚身体+长尾羽，像小球长了长尾巴。</div>
+    <div class="habit">社交达人，成群在苇秆间跳跃，叽叽喳喳互相呼应。</div>
+    <div class="spot">芦苇丛各处</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/26_文须雀.jpg" alt="文须雀"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">26</span>
+      <h3>🐦 文须雀</h3>
+      <span class="freq">⭐⭐⭐</span>
+    </div>
+    <div class="sci">雀形目 鸦雀科</div>
+    <div class="look">♂有八字胡标志——眼周黑色向下延伸。身体淡黄褐色。</div>
+    <div class="habit">体操小王子！苇秆上绕杆旋转、腾空跳跃，偶尔表演一字马。</div>
+    <div class="spot">北园湿地芦苇区</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/27_东方大苇莺.jpg" alt="东方大苇莺"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">27</span>
+      <h3>🐦 东方大苇莺</h3>
+      <span class="freq">⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="sci">雀形目 苇莺科</div>
+    <div class="look">上体橄榄褐，下体乳黄，皮黄色眉纹。站在苇秆顶端高歌。</div>
+    <div class="habit">芦苇荡摇滚歌手，鸣声响亮刺耳，6月叫最欢。常被大杜鹃巢寄生。</div>
+    <div class="spot">芦苇区（先闻其声）</div>
+  </div>
+</div>
+<h2 class="section-title">🎵 夏季迁徙/鸣禽（4种）</h2>
+
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/28_大杜鹃.jpg" alt="大杜鹃"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">28</span>
+      <h3>🎵 大杜鹃</h3>
+      <span class="freq">⭐⭐⭐</span>
+    </div>
+    <div class="sci">鹃形目 杜鹃科</div>
+    <div class="look">上体灰色，腹白有黑横纹，像小鹰。布谷—布谷叫声人人耳熟。</div>
+    <div class="habit">著名巢寄生鸟——自己不筑巢，把蛋下在东方大苇莺巢里。6月叫得最欢。</div>
+    <div class="spot">湿地芦苇区上空</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/29_四声杜鹃.jpg" alt="四声杜鹃"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">29</span>
+      <h3>🎵 四声杜鹃</h3>
+      <span class="freq">⭐⭐⭐</span>
+    </div>
+    <div class="sci">鹃形目 杜鹃科</div>
+    <div class="look">和大杜鹃相似，叫声四声一度：快快割麦——快快割麦——。</div>
+    <div class="habit">叫声四声一组。和大杜鹃一样巢寄生。</div>
+    <div class="spot">湿地周边树林</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/30_家燕.jpg" alt="家燕"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">30</span>
+      <h3>🐦 家燕</h3>
+      <span class="freq">⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="sci">雀形目 燕科</div>
+    <div class="look">上体蓝黑光泽，前额喉部栗红，尾深叉如剪刀——燕尾服。</div>
+    <div class="habit">低空捕虫高手，几乎不落地。6月育雏期，亲鸟频繁回巢。</div>
+    <div class="spot">湖面、草地上空</div>
+  </div>
+</div>
+<div class="bird-card">
+  <div class="img-wrap"><img src="./index_files/31_普通雨燕.jpg" alt="普通雨燕"></div>
+  <div class="info">
+    <div class="bird-header">
+      <span class="num">31</span>
+      <h3>🐦 普通雨燕</h3>
+      <span class="freq">⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="sci">雨燕目 雨燕科</div>
+    <div class="look">全身黑褐，翅膀像镰刀狭长，飞行极快。四趾全朝前无法地面站立。</div>
+    <div class="habit">北京标志夏候鸟，速度达110km/h。傍晚北园雨燕塔上百只盘旋，震撼！</div>
+    <div class="spot">北园雨燕塔，傍晚</div>
+  </div>
+</div>
+<div class="challenge">
+  <h2>🏆 奥森观鸟大满贯挑战</h2>
+  <p>一天能集齐多少种？和孩子一起打卡！</p>
+  <div class="checklist">
+    <div class="item">☐ 01. 绿头鸭</div>
+    <div class="item">☐ 02. 小䴙䴘</div>
+    <div class="item">☐ 03. 白骨顶</div>
+    <div class="item">☐ 04. 黑水鸡</div>
+    <div class="item">☐ 05. 苍鹭</div>
+    <div class="item">☐ 06. 小白鹭</div>
+    <div class="item">☐ 07. 池鹭</div>
+    <div class="item">☐ 08. 大麻鳽</div>
+    <div class="item">☐ 09. 斑头雁</div>
+    <div class="item">☐ 10. 灰雁</div>
+    <div class="item">☐ 11. 鸿雁</div>
+    <div class="item">☐ 12. 赤麻鸭</div>
+    <div class="item">☐ 13. 戴胜</div>
+    <div class="item">☐ 14. 星头啄木鸟</div>
+    <div class="item">☐ 15. 灰头绿啄木鸟</div>
+    <div class="item">☐ 16. 大斑啄木鸟</div>
+    <div class="item">☐ 17. 红嘴蓝鹊</div>
+    <div class="item">☐ 18. 灰喜鹊</div>
+    <div class="item">☐ 19. 乌鸫</div>
+    <div class="item">☐ 20. 黑尾蜡嘴雀</div>
+    <div class="item">☐ 21. 珠颈斑鸠</div>
+    <div class="item">☐ 22. 白鹡鸰</div>
+    <div class="item">☐ 23. 鹪鹩</div>
+    <div class="item">☐ 24. 震旦鸦雀 ⭐</div>
+    <div class="item">☐ 25. 棕头鸦雀</div>
+    <div class="item">☐ 26. 文须雀</div>
+    <div class="item">☐ 27. 东方大苇莺</div>
+    <div class="item">☐ 28. 大杜鹃</div>
+    <div class="item">☐ 29. 四声杜鹃</div>
+    <div class="item">☐ 30. 家燕</div>
+    <div class="item">☐ 31. 普通雨燕</div>
+  </div>
+  <p style="margin-top:10px;font-size:0.85em;color:#888;">
+    🏆 满30种=奥森观鸟王者 | 满20种=观鸟达人 | 满10种=入门啦！
+  </p>
+</div>
+
+<div class="footer">
+  <p>🦜 祝老大一家四口明天在奥森看到满满的鸟儿！</p>
+  <p>📸 图片来源于百度百科 · 仅供个人观鸟参考</p>
+</div>
+
+</div>
+
+</body></html>
